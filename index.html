@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header style="display: flex; justify-content: space-between; align-items: center; padding: 10px 20px;">
+        <h1>Z-Store</h1>
+        <p id="logado"></p>
+    </header>
+    <nav style="position: absolute; top: 10px; right: 10px;">
+        <a href="index.html" class="bord">Home</a>
+        <a href="sobrenps.html" class="bord">Sobre nós</a>
+        <a href="ASSETS/html/signin.html" class="bord">Login</a>
+        <input type="button" value="Sair" class="sair" onclick="sair()">
+    </nav>
+    <main>
+        <div class="produto-container">
+            <div id="imagem">
+                <img id="produto-img" src="" alt="Produto 1">
+            </div>
+            <div id="info">
+                <h2 id="premium">Produto Premium</h2>
+                <h2 id="produto-nome">Produto 1</h2>
+                <p id="produto-desc">Descrição do Produto 1</p>
+                <a href="" id="saibamais" target="_blank">Saiba mais</a>
+            </div>
+        </div>
+        </div>
+        <div id="divid">
+        <div id="vv">
+            <iframe id="video" width="560" height="315" src="" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+        </div>
+        </div>
+        <div class="navegação">
+            <button onclick="produtoAnterior()" class="botao-lateral esquerdo">◀</button>
+            <button onclick="proximoProduto()" class="botao-lateral direito">▶</button>
+        </div>
+    </main>
+    <footer>Site desenvolvido por <a href="https://www.linkedin.com/in/gabriel-maccari-55b92331b/" id="zbiel" target="_blank">Gabriel
+            Maccari</a></footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
