@@ -5,7 +5,7 @@ const produtos = [
     descricao: "Experimente o som da forma mais pura.Cancelamento de ruído adaptativo, qualidade de áudio excepcional e design ergonômico para o máximo conforto. Sua música não soou tão bem.",
     imagem: "imagens/air-pods.png",
     video: "https://www.youtube.com/watch?v=WDjE6nPLOUo",
-    saibamais: "https://www.apple.com/br/airpods-max/"
+    saibamais: "produtos/airpods.html"
 
   },
   {
@@ -14,7 +14,7 @@ const produtos = [
     descricao: "O smartwatch mais avançado do mercado. Monitoramento completo de saúde, GPS integrado,tela AMOLED de alta resolução e bateria de longa duração. Perfeito para acompanhar seu estilo de vida.",
     imagem: "imagens/apple-watch.png",
     video: "https://www.youtube.com/watch?v=le2hpva3B-A",
-    saibamais: "https://www.apple.com/br/watch/"
+    saibamais: "produtos/applewatch.html"
   },
   {
     ref: "OUTRA PARADA",
@@ -22,7 +22,7 @@ const produtos = [
     descricao: "Realidade aumentada imersiva com o Apple Vision Pro: inovação ao alcance dos olhos.",
     imagem: "imagens/vision-pro.png",
     video: "https://www.youtube.com/watch?v=TX9qSaGXFyg",
-    saibamais: "https://www.apple.com/apple-vision-pro/"
+    saibamais: "produtos/visionpro.html"
   }
 ];
 
@@ -93,3 +93,11 @@ if (timer) {
 timer = setInterval(() => {
   produtoAnterior();
 }, 5000);
+const miniaturas = document.querySelectorAll(".miniaturas img");
+        const imagemExpandida = document.getElementById("img-expandida");
+        miniaturas.forEach(img => {
+            img.addEventListener("click", () => {
+                imagemExpandida.src = img.src;
+                imagemExpandida.alt = img.alt;
+            });
+        });
